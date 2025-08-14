@@ -14,7 +14,8 @@ function threeSum(arr, target) {
 			if(sum<target){
 				l++;
 			}
-			else r++;
+			else if(sum>target) r++;
+			else return ans;
 		}
 	}
 	return ans;
